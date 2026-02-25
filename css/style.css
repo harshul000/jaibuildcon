@@ -1,0 +1,53 @@
+/* * Jai Buildcon - Custom Styles
+ * These styles go beyond Tailwind's utility classes for specific visual effects.
+ */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gradient overlay for the hero section image */
+.hero-overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/* Custom underline effect for section titles */
+.title-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title-underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: #1e3a8a;
+    /* Matches primary color */
+}
+
+/* Left-aligned variation of the underline */
+.title-underline-left::after {
+    left: 0;
+    transform: none;
+}
+
+/* Image zoom effect on project card hover */
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+/* Hide scrollbar for horizontal scrolling elements (like the client filters on mobile) */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Jai Buildcon</title>
+    <meta name="description"
+        content="Get in touch with Jai Buildcon for your infrastructure and construction project requirements. We're ready to help you build.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- TOP BAR -->
+    <div class="bg-primary text-white text-sm py-2 px-4 hidden md:block">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <div class="flex space-x-6">
+                <span class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +91-9876543210</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i>
+                    info@jaibuildcon.in</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-primary text-white p-2 rounded"><i data-lucide="building-2" class="w-8 h-8"></i></div>
+                <div>
+                    <h1 class="text-2xl font-bold text-primary leading-none tracking-tight">JAI BUILDCON</h1>
+                    <p class="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Engineering Excellence
+                    </p>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-700">
+                <a href="index.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">HOME</a>
+                <a href="about.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">ABOUT
+                    US</a>
+                <a href="projects.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">PROJECTS</a>
+                <a href="services.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">SERVICES</a>
+                <a href="contact.html" class="text-primary border-b-2 border-primary pb-1">CONTACT</a>
+            </nav>
+            <button class="lg:hidden text-gray-700 focus:outline-none" id="mobile-menu-btn">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
+            <nav class="flex flex-col px-4 py-2 space-y-3 font-semibold text-gray-700">
+                <a href="index.html" class="hover:text-primary">HOME</a>
+                <a href="about.html" class="hover:text-primary">ABOUT US</a>
+                <a href="projects.html" class="hover:text-primary">PROJECTS</a>
+                <a href="services.html" class="hover:text-primary">SERVICES</a>
+                <a href="contact.html" class="text-primary">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="relative py-24 bg-gray-900 text-white text-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Contact Hero" class="w-full h-full object-cover opacity-25">
+        </div>
+        <div class="relative z-10 container mx-auto max-w-7xl px-4">
+            <span class="text-secondary font-bold uppercase tracking-widest text-sm">Get In Touch</span>
+            <h1 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Contact Us</h1>
+            <p class="text-blue-200 max-w-2xl mx-auto">Have a project in mind? We'd love to hear from you. Reach out to
+                our team today.</p>
+            <div class="flex items-center justify-center gap-2 mt-6 text-sm text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <span class="text-white">Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-8 relative z-10">
+                <div
+                    class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="phone" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1">Call Us</h4>
+                    <a href="tel:+919876543210"
+                        class="text-primary font-semibold hover:text-secondary transition">+91-9876543210</a>
+                    <p class="text-gray-500 text-xs mt-1">Mon-Sat, 9 AM – 6 PM</p>
+                </div>
+                <div class="bg-primary rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-white/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="mail" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-1">Email Us</h4>
+                    <a href="mailto:info@jaibuildcon.in"
+                        class="text-blue-200 font-semibold hover:text-white transition">info@jaibuildcon.in</a>
+                    <p class="text-blue-300 text-xs mt-1">We reply within 24 hours</p>
+                </div>
+                <div
+                    class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1">Visit Us</h4>
+                    <p class="text-gray-600 text-sm">Buildcon Tower, Main Road,<br>Kota, Rajasthan – 324001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM + IMAGE -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                <!-- Form -->
+                <div class="bg-white rounded-xl shadow-lg p-8 md:p-10">
+                    <span class="text-secondary font-bold uppercase tracking-widest text-sm">Send a Message</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-primary mt-2 mb-8">Request a Free Consultation</h2>
+
+                    <form id="contact-form" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+                                <input type="text" id="name" required placeholder="Your full name"
+                                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="+91-XXXXXXXXXX"
+                                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Project Type</label>
+                            <select id="project-type"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-white">
+                                <option value="">-- Select Project Type --</option>
+                                <option>Highway Construction</option>
+                                <option>Bridge Engineering</option>
+                                <option>Building Construction</option>
+                                <option>Earthwork &amp; Excavation</option>
+                                <option>Irrigation Works</option>
+                                <option>Turnkey / EPC Project</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Your Message *</label>
+                            <textarea id="message" rows="5" required placeholder="Describe your project requirements..."
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            SEND MESSAGE
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="form-success"
+                        class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm font-medium text-center">
+                        ✅ Thank you! Your message has been sent. We'll get back to you within 24 hours.
+                    </div>
+                </div>
+
+                <!-- Right: Image + Info -->
+                <div class="space-y-6">
+                    <div class="rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1541888088320-be52d8363a01?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                            alt="Construction Project" class="w-full h-72 object-cover">
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h4 class="font-bold text-gray-800 mb-4 text-lg">Office Hours</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Monday – Friday</span>
+                                <span>9:00 AM – 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Saturday</span>
+                                <span>9:00 AM – 2:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Sunday</span>
+                                <span class="text-red-500">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-primary text-white rounded-xl p-6">
+                        <h4 class="font-bold text-lg mb-3">Emergency Contact</h4>
+                        <p class="text-blue-200 text-sm mb-3">For urgent project-related queries, reach us directly:</p>
+                        <a href="tel:+919876543210"
+                            class="flex items-center gap-2 text-white font-bold hover:text-secondary transition">
+                            <i data-lucide="phone" class="w-5 h-5"></i> +91-9876543210
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP EMBED -->
+    <section class="bg-gray-200">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57891.57547099456!2d75.8001553!3d25.2138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f850b7e9a21df%3A0x6c9e2c5d07b7b0f8!2sKota%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1690000000000"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Jai Buildcon Location">
+        </iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-4 border-t border-gray-700">
+        <div class="container mx-auto max-w-7xl px-4 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-primary text-white p-2 rounded"><i data-lucide="building-2" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-white">JAI BUILDCON</h2>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Leading infrastructure and construction company
+                        committed to engineering excellence.</p>
+                </div>
+                <div>
+                    <h4 class="text-base font-bold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-secondary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-secondary transition">Projects</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-base font-bold text-white mb-4 uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin"
+                                class="w-4 h-4 text-secondary flex-shrink-0 mt-0.5"></i> Buildcon Tower, Main Road,
+                            Kota, Rajasthan – 324001</li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-secondary"></i>
+                            +91-9876543210</li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i>
+                            info@jaibuildcon.in</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black/40 text-gray-500 py-4 text-sm border-t border-gray-700 text-center">
+            <p>Copyright © 2026 Jai Buildcon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const success = document.getElementById('form-success');
+            success.classList.remove('hidden');
+            this.reset();
+            success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    </script>
+</body>
+
+</html>

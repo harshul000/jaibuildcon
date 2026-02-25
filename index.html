@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Buildcon | Building the Future</title>
+    <meta name="description"
+        content="Jai Buildcon is a leading infrastructure and construction company specializing in highway construction, bridge engineering, and turnkey solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS (Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config -->
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- TOP BAR -->
+    <div class="bg-primary text-white text-sm py-2 px-4 hidden md:block">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <div class="flex space-x-6">
+                <span class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +91-9876543210</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i>
+                    info@jaibuildcon.in</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-secondary transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-primary text-white p-2 rounded">
+                    <i data-lucide="building-2" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-primary leading-none tracking-tight">JAI BUILDCON</h1>
+                    <p class="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Engineering Excellence
+                    </p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-700">
+                <a href="index.html" class="text-primary border-b-2 border-primary pb-1">HOME</a>
+                <a href="about.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">ABOUT
+                    US</a>
+                <a href="projects.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">PROJECTS</a>
+                <a href="services.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">SERVICES</a>
+                <a href="#clients"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">CLIENTS</a>
+                <a href="contact.html"
+                    class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">CONTACT</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-gray-700 focus:outline-none" id="mobile-menu-btn">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
+            <nav class="flex flex-col px-4 py-2 space-y-3 font-semibold text-gray-700">
+                <a href="index.html" class="text-primary">HOME</a>
+                <a href="about.html" class="hover:text-primary">ABOUT US</a>
+                <a href="projects.html" class="hover:text-primary">PROJECTS</a>
+                <a href="services.html" class="hover:text-primary">SERVICES</a>
+                <a href="#clients" class="hover:text-primary">CLIENTS</a>
+                <a href="contact.html" class="hover:text-primary">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-[90vh] min-h-[600px] flex items-center bg-gray-900">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888088320-be52d8363a01?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Construction Site" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="container mx-auto max-w-7xl px-4 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <span
+                    class="inline-block py-1 px-3 bg-secondary text-white text-xs font-bold tracking-wider mb-4 rounded">LEADING
+                    INFRASTRUCTURE COMPANY</span>
+                <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">BUILDING THE <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-secondary">FUTURE</span>
+                    TODAY</h2>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">We specialize in providing top-tier
+                    engineering, procurement, and construction services. Delivering high-quality infrastructure
+                    solutions with timely execution.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="projects.html"
+                        class="bg-primary hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded transition duration-300">EXPLORE
+                        PROJECTS</a>
+                    <a href="contact.html"
+                        class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-semibold py-3 px-8 rounded transition duration-300">CONTACT
+                        US</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <a href="#stats" class="text-white opacity-70 hover:opacity-100 transition">
+                <i data-lucide="chevrons-down" class="w-8 h-8"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section id="stats" class="bg-primary text-white py-14">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-extrabold text-secondary mb-2">20+</div>
+                    <div class="text-sm font-semibold uppercase tracking-wider text-blue-200">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-extrabold text-secondary mb-2">150+</div>
+                    <div class="text-sm font-semibold uppercase tracking-wider text-blue-200">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-extrabold text-secondary mb-2">50+</div>
+                    <div class="text-sm font-semibold uppercase tracking-wider text-blue-200">Trusted Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-extrabold text-secondary mb-2">500+</div>
+                    <div class="text-sm font-semibold uppercase tracking-wider text-blue-200">Skilled Workforce</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Image -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                        alt="Jai Buildcon Construction Team"
+                        class="rounded-lg shadow-2xl w-full object-cover h-[480px]">
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-xl text-center hidden md:block">
+                        <div class="text-4xl font-extrabold">20+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-blue-200 mt-1">Years of Trust
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div>
+                    <span class="text-secondary font-bold uppercase tracking-widest text-sm">Who We Are</span>
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary mt-2 mb-6 title-underline-left">Why Choose
+                        Jai Buildcon?</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Jai Buildcon is one of the leading construction and infrastructure developers in the region. We
+                        excel at providing the highest quality construction services and turnkey solutions tailored to
+                        your requirements. Timely execution is always ensured by a team of experts with decades of
+                        industry experience.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary flex-shrink-0">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Quality Assurance</h4>
+                                <p class="text-sm text-gray-600">We maintain the highest standards at every stage, from
+                                    design to delivery, ensuring lasting infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">On-Time Delivery</h4>
+                                <p class="text-sm text-gray-600">Our project management expertise ensures milestones are
+                                    met and projects are delivered on schedule.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary flex-shrink-0">
+                                <i data-lucide="users" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Expert Team</h4>
+                                <p class="text-sm text-gray-600">A highly skilled workforce of 500+ engineers,
+                                    technicians, and operators drives every project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html"
+                        class="inline-block bg-primary hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded transition duration-300">LEARN
+                        MORE ABOUT US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-sm">What We Do</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary mt-2 title-underline">OUR CORE SERVICES</h3>
+                <p class="text-gray-600 mt-8 max-w-2xl mx-auto">From highway construction to complex bridge
+                    engineering, we provide end-to-end infrastructure solutions across India.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service 1: Highway Construction -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Highway Construction"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="milestone" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Highway Construction</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Construction and widening of national and
+                            state highways, expressways, and bypass roads with modern pavement technology.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Bridge Engineering -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Bridge Engineering"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="bridge" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Bridge Engineering</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Design and construction of major bridges,
+                            flyovers, railway over-bridges and viaducts to connect communities.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Building Construction -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Building Construction"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="building" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Building Construction</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Construction of government buildings,
+                            institutional structures, commercial complexes and residential projects.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Earthwork & Excavation -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Earthwork"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="shovel" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Earthwork & Excavation</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Large-scale earthwork, embankment, cutting,
+                            and filling for railway and road formation projects.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Irrigation Works -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Irrigation Works"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="droplets" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Irrigation Works</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Canals, dams, check dams, water pipelines and
+                            irrigation network construction to support agriculture.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Turnkey Solutions -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Turnkey Solutions"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary">
+                                <i data-lucide="key-round" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 text-lg">Turnkey Solutions</h4>
+                        </div>
+                        <div class="w-10 h-1 bg-secondary mb-3"></div>
+                        <p class="text-gray-600 text-sm leading-relaxed">End-to-end engineering, procurement and
+                            construction (EPC) contracts handled by our experienced team.</p>
+                        <a href="services.html"
+                            class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-secondary transition">LEARN
+                            MORE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html"
+                    class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded transition duration-300">VIEW
+                    ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="featured-projects" class="py-20 bg-white">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-sm">Our Work</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary mt-2 title-underline">FEATURED PROJECTS</h3>
+                <p class="text-gray-600 mt-8 max-w-2xl mx-auto">A glimpse of the landmark infrastructure projects we
+                    have successfully delivered across the nation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="relative overflow-hidden rounded-lg group h-72 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Bridge Construction"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <span
+                            class="text-xs font-bold bg-primary px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Completed</span>
+                        <h4 class="font-bold text-lg leading-tight">Major Bridge – Northern Kota Bypass</h4>
+                        <p class="text-gray-300 text-sm mt-1">675 Mtr. bridge over river</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="relative overflow-hidden rounded-lg group h-72 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Highway Project"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <span
+                            class="text-xs font-bold bg-secondary px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Ongoing</span>
+                        <h4 class="font-bold text-lg leading-tight">4-Lane Highway Widening Project</h4>
+                        <p class="text-gray-300 text-sm mt-1">National Highway expansion</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="relative overflow-hidden rounded-lg group h-72 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Building Project"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <span
+                            class="text-xs font-bold bg-primary px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Completed</span>
+                        <h4 class="font-bold text-lg leading-tight">Government Institutional Complex</h4>
+                        <p class="text-gray-300 text-sm mt-1">Multi-block campus construction</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="projects.html"
+                    class="inline-block bg-primary hover:bg-blue-800 text-white font-bold py-3 px-8 rounded transition duration-300">VIEW
+                    ALL PROJECTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS SECTION -->
+    <section id="clients" class="py-20 bg-gray-50">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-sm">Who We Work With</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary mt-2 title-underline">OUR ESTEEMED CLIENTS</h3>
+                <p class="text-gray-600 mt-8 max-w-2xl mx-auto">We are trusted by leading government bodies and
+                    corporations for our reliability and engineering excellence.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Client 1 -->
+                <div
+                    class="bg-white rounded-lg p-6 flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-50 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="building-2" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-700 uppercase tracking-wide">NHAI</p>
+                        <p class="text-xs text-gray-500">Natl. Highways Auth.</p>
+                    </div>
+                </div>
+                <!-- Client 2 -->
+                <div
+                    class="bg-white rounded-lg p-6 flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-50 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="train-track" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-700 uppercase tracking-wide">Indian Railways</p>
+                        <p class="text-xs text-gray-500">Ministry of Railways</p>
+                    </div>
+                </div>
+                <!-- Client 3 -->
+                <div
+                    class="bg-white rounded-lg p-6 flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-50 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="landmark" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-700 uppercase tracking-wide">PWD</p>
+                        <p class="text-xs text-gray-500">Public Works Dept.</p>
+                    </div>
+                </div>
+                <!-- Client 4 -->
+                <div
+                    class="bg-white rounded-lg p-6 flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-50 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="map" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-700 uppercase tracking-wide">State Govt.</p>
+                        <p class="text-xs text-gray-500">Various State Bodies</p>
+                    </div>
+                </div>
+                <!-- Client 5 -->
+                <div
+                    class="bg-white rounded-lg p-6 flex items-center justify-center shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-50 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="droplets" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-700 uppercase tracking-wide">Irrigation Dept.</p>
+                        <p class="text-xs text-gray-500">Water Resources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US BANNER -->
+    <section class="relative py-24 bg-gray-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Construction workers" class="w-full h-full object-cover opacity-25">
+        </div>
+        <div class="container mx-auto max-w-7xl px-4 relative z-10 text-center text-white">
+            <span class="text-secondary font-bold uppercase tracking-widest text-sm">Ready to Build?</span>
+            <h3 class="text-3xl md:text-5xl font-bold mt-3 mb-6">Have a Project in Mind?</h3>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-10 text-lg">Let our experienced team turn your vision into
+                reality. We deliver quality infrastructure that stands the test of time.</p>
+            <a href="contact.html"
+                class="bg-secondary hover:bg-orange-600 text-white font-bold py-4 px-10 rounded transition duration-300 text-lg">GET
+                A FREE QUOTE</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-gray-900 text-gray-300 pt-16">
+        <div class="container mx-auto max-w-7xl px-4 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Logo & About -->
+                <div>
+                    <div class="flex items-center gap-2 mb-5">
+                        <div class="bg-primary text-white p-2 rounded">
+                            <i data-lucide="building-2" class="w-6 h-6"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">JAI BUILDCON</h2>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        A leading infrastructure and construction company committed to delivering high-quality projects
+                        on time, ensuring trust, transparency, and engineering excellence.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-gray-700 hover:bg-primary p-2 rounded text-gray-300 hover:text-white transition"><i
+                                data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="bg-gray-700 hover:bg-primary p-2 rounded text-gray-300 hover:text-white transition"><i
+                                data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="bg-gray-700 hover:bg-primary p-2 rounded text-gray-300 hover:text-white transition"><i
+                                data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-6 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Projects</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sectors -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-6 uppercase tracking-wider">Our Sectors</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Highway Construction</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Bridge Engineering</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Building Construction</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Earthwork</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i
+                                    data-lucide="chevron-right" class="w-4 h-4"></i> Turnkey Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-6 uppercase tracking-wider">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5"></i>
+                            <span>123, Buildcon Tower, Main Road, Kota, Rajasthan - 324001</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                            <a href="tel:+919876543210" class="hover:text-secondary transition">+91-9876543210</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                            <a href="mailto:info@jaibuildcon.in"
+                                class="hover:text-secondary transition">info@jaibuildcon.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Strip -->
+        <div class="bg-black/40 text-gray-500 py-4 text-sm border-t border-gray-700">
+            <div class="container mx-auto max-w-7xl px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+                <p>Copyright © 2026 Jai Buildcon. All Rights Reserved.</p>
+                <p class="text-xs">Designed with ❤️ for Engineering Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
